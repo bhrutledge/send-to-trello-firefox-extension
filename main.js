@@ -24,11 +24,6 @@ function addToTrello() {
         (name ? '&name=' + encodeURIComponent(name) : '') +
         (desc ? '&desc=' + encodeURIComponent(desc) : '');
 
-      // set iframe
-      /*
-      const trelloFrame = document.getElementById('trelloFrame');
-      trelloFrame.src = trelloUrl;
-      */
       const newWindowConfig = {
         url: trelloUrl,
         type: 'popup',
